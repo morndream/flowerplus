@@ -1,0 +1,26 @@
+/*探索花加下划线*/
+.nav-bar>li:nth-child(4) a{
+    border-bottom:2px solid #fff;
+}
+.nav-bar>li:nth-child(2) a{
+    border-bottom:none;
+}
+
+/*主模块1<全球花农伙伴>样式重写*/
+.hjhb{
+    margin-top:656px;
+}
+.hjhb img:last-child,.gyl img:last-child{
+    width:72%;
+    margin:50px auto 0;
+}
+.dymh p>a{
+    color: #000;
+    font-size:16px;
+    letter-spacing:8px;
+    border: solid 1px #666;
+    padding: 10px;
+    text-indent: 9px;
+    display: inline-block;
+    text-align: center;
+}

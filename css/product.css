@@ -1,0 +1,225 @@
+/*设置页面的宽高*/
+.container{
+    width:100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+
+/*导航栏字体的样式显示方式*/
+.nav-bar>li>a{
+    color:#000 !important;
+}
+/*黑底白字，设置字体完全显示白色*/
+.logo-black{
+    opacity:0.6 !important;
+}
+/*产品加下划线*/
+.nav-bar>li:nth-child(3)>a{
+    border-bottom:2px solid #000;
+}
+.nav-bar>li:nth-child(1)>a:hover,
+.nav-bar>li:nth-child(2)>a:hover{
+    border-bottom:2px solid #000 !important;
+    color:#666;
+}
+
+/*底部下拉箭头样式和定位*/
+.arrow-idxs{
+    width:40px;
+    height:40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+    background: url(../images/icon_arrow.png) no-repeat;
+    background-position-y:center;
+    background-size:contain;
+    z-index:5;
+}
+
+/*中间主体区域*/
+.section {
+    position:absolute;
+    z-index:3;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+/*每个背景图片的宽高*/
+.s_w{
+    width:100%;
+    height:100vh;
+}
+/*每张图片模板位置*/
+.con {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+}
+/*侧边栏轮播指示器*/
+.container .list {
+    position: absolute;
+    right: 61px;
+    top:40%;
+    z-index: 20;
+}
+/*侧边栏轮播指示器样式*/
+.container .list li {
+    width: 5px;
+    height: 5px;
+    border: 1px solid transparent;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    cursor:pointer;
+    z-index: 20;
+}
+/*当前指示器样式*/
+.container .list li.current {
+    border: 1px solid #f5f5f5;
+    background-color: #000;
+    animation: point 1s 0.2s;
+}
+/*侧边栏指示器动画样式*/
+@keyframes point {
+    0% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*设置中间横幅位置大小*/
+.product-intr{
+    width:22%;
+    position:absolute;
+    text-align:center;
+}
+/*图片*/
+.product-intr>img{
+    width: 100%;
+}
+/*首屏/第5张文字位置*/
+.product-intr.style1{
+    top:46%;
+    left:5%;
+}
+/*第二张文字样式*/
+.product-intr.style2{
+    top:44%;
+    right:9%;
+}
+/*第二张文字样式*/
+.product-intr.style3{
+    top:44%;
+    left:9%;
+}
+/*第4张文字样式*/
+.product-intr.style4{
+    top:42%;
+    right:10%;
+}
+/*第6张文字样式*/
+.product-intr.style6{
+    top:38%;
+    right:9%;
+}
+
+/*中间线条样式*/
+.product-intr .line{
+    width: 50px;
+    border:1px solid #666;
+    margin: 20px auto;
+}
+
+/*加载时，文字向上弹跳样式*/
+.word-show{
+    animation: fadeInUp 1s .5s ease both;
+}
+/*文字样式*/
+.product-intr p{
+    font-size: 14px;
+    letter-spacing: 10px;
+    line-height: 36px;
+}
+/*查看详情样式*/
+.product-intr a{
+    display:inline-block;
+    color:#000;
+    font-size:16px;
+    letter-spacing:8px;
+    text-align:center;
+    padding:8px 25px;
+    margin-top:55px;
+    border: 1px solid #cecece;
+}
+/*鼠标悬停时样式*/
+.product-intr a:hover{
+    border:1px solid #333;
+}
+/*动画效果，向上移动时透明，完成后再显示*/
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translateY(20px)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+/*加载时，文字向上弹跳样式*/
+.my_style1{
+    animation: fadeInUp 1s .5s ease both;
+}
+/*动画效果，向上移动时透明，完成后再显示*/
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translateY(20px)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+/*查看详情二维码模块隐藏*/
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: none;
+}
+
+/*点击查看详情时显示二维码模块*/
+.popshow {
+    animation: showBoxAnimate .35s ease;
+    display: block !important;
+}
+/*图片低部背景颜色*/
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+}
+/*图片容器位置大小*/
+.popcontent {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width:20%;
+    transform: translateX(-50%);
+}
+/*图片大小*/
+.popimg{
+    width: 100%;
+}

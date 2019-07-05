@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<div class="container" id="container">
+  <!--顶部logo和导航栏-->
+  <div class="header my-header">
+    <!--logo图标-->
+    <div class="logo">
+      <img src="../images/logo-b.png" class="logo-b logo-black">
+      <img src="../images/logo-w.png" class="logo-w logo-white">
+    </div>
+    <!--导航栏菜单nav-bar-->
+    <ul class="nav-bar menu ">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="tshj.html"><span>探索花加</span></a></li>
+      <li class="hoverhj"><a href="product.html"><span>产品</span></a>
+        <!--产品项下拉菜单-->
+        <div class="down_menu  menu_style">
+          <!--家居适用-->
+          <ul>
+            <li>家居适用</li>
+            <li><a href="#">简花 | 99元起</a></li>
+            <li><a href="#">混合 | 99元起</a></li>
+            <li><a href="#">挚爱·玫瑰 | 399元</a></li>
+            <li><a href="#">Alpha | 1699元</a></li>
+          </ul>
+          <!--办公适用-->
+          <ul>
+            <li>办公适用</li>
+            <li><a href="#">MINI桌花 | 79元起</a></li>
+            <li><a href="#">小森林·绿植 | 39元起</a></li>
+          </ul>
+          <!--右侧图片-->
+          <a href=""><img src="../images/cpxl.jpg"></a>
+        </div>
+      </li>
+      <li class="hoverhj"><a href="hjgs.html"><span>花加故事</span></a>
+        <!--产品项下拉菜单-->
+        <div class="down_menu menu_style">
+          <!--花加故事-->
+          <ul>
+            <li>花加故事</li>
+            <li><a href="#">品牌故事 | 一个关于鲜花的梦想</a></li>
+            <li><a href="#">鲜花故事 | 不为人知的故事</a></li>
+          </ul>
+          <a href="#"><img src="../images/gsxl.jpg"></a>
+        </div>
+      </li>
+      <li><a href="#" class="hover1"><span>花加艺术</span></a></li>
+      <li><a href="#" class="hover2"><span>商业合作</span></a></li>
+    </ul>
+  </div>
+  <!--侧边栏二维码aside-bar-->
+  <div class="aside-bar">
+    <ul>
+      <li>
+        <div class="code"></div>
+      </li>
+      <li>
+        <div class="code"></div>
+      </li>
+    </ul>
+  </div>
+  <!--中间主体内容共5页-->
+  <div class="section active" id="box">
+    <!--1L视频-->
+    <div class="con zIndex" id="one" >
+      <div>
+        <!--poster播放视频前显示的图片-->
+        <!--设置自动播放、页面加载完成后自动载入视频 重复播放-->
+        <video  poster="../images/1.jpg" src="../images/sy.mp4" autoplay="autoplay" preload="auto" loop="loop">
+          <div><img src="../images/2.jpg" alt=""></div>
+        </video>
+        <div class="banner word-show mystyle1">
+          <img data-img=""  src="../images/w1.png">
+          <a class="btn" href="tshj.html">进入探索花加</a>
+        </div>
+      </div>
+    </div>
+    <div class="con" id="two">
+      <div><img src="../images/2.jpg" alt=""></div>
+      <div class="banner word-show mystyle2">
+        <img data-img=""  src="../images/w2.png">
+        <a class="btn" href="tshj.html">进入探索花加</a>
+      </div>
+    </div>
+    <div class="con" id="three">
+      <div><img src="../images/3.jpg" alt=""></div>
+      <div class="banner word-show mystyle3">
+        <img data-img=""  src="../images/w3.png">
+        <a class="btn" href="tshj.html">进入探索花加</a>
+      </div>
+    </div>
+    <div class="con" id="four">
+      <div><img src="../images/4.jpg" alt=""></div>
+      <div class="banner word-show mystyle4">
+        <img data-img=""  src="../images/w4.png">
+        <a class="btn" href="tshj.html">进入探索花加</a>
+      </div>
+    </div>
+    <div class="con" id="five">
+      <div><img src="../images/5.jpg" alt=""></div>
+      <div class="banner word-show mystyle5">
+        <img data-img=""  src="../images/w5.png">
+        <a class="btn" href="#">即刻订阅美好</a>
+      </div>
+    </div>
+  </div>
+  <!--侧边栏轮播指示器-->
+  <ol id="list" class="list">
+  </ol>
+
+  <!--<div class="banner my_style1">-->
+    <!--<img data-img=""  src="../images/w2.png">-->
+    <!--<a class="btn" href="#">进入探索花加</a>-->
+  <!--</div>-->
+  <script src="../js/jquery-1.11.3.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+</div>
+</body>
+</html>

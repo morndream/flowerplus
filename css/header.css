@@ -1,0 +1,32 @@
+/*清除元素自带的内外边距*/
+*{margin:0;padding:0;}
+/*设置页面的字体样式*/
+body{
+    font-family: "PingFang SC",serif;
+    font-size:12px;
+}
+/*设置logo图片的大小和位置*/
+.logo-b,.logo-w{
+    width:178px;
+    position:absolute;
+    top:43px;
+    left:62px;
+    z-index: 70;
+    transition: all 0.3s;
+}
+/*透明图标*/
+.logo-b{
+
+}
+/*黑色图标*/
+.logo-w{
+    
+}
+/*解决定位造成的高度坍塌*/
+.logo{
+    height:93px;
+    border:1px solid red;
+}
+.nav-bar{
+
+}

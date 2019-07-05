@@ -1,0 +1,185 @@
+/*设置页面的宽高*/
+.container{
+    width:100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+/*首页下划线*/
+.nav-bar>li:first-child a{
+    border-bottom:2px solid #fff;
+}
+/*底部下拉箭头样式和定位*/
+.arrow-idxs{
+    width:40px;
+    height:40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+    background: url(../images/icon_arrow.png) no-repeat;
+    background-position-y:center;
+    background-size:contain;
+    z-index:5;
+}
+
+/*中间主体内容*/
+.section {
+    position:absolute;
+    z-index:3;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+/*设置视频样式*/
+.section video{
+    min-width:100%;
+    min-height:100%;
+    bottom:0;
+    right:0;
+    background-size:cover;
+    overflow: hidden;
+    position: absolute;
+}
+/*每个背景图片的宽高*/
+.s_w{
+    width:100%;
+    height:100vh;
+}
+/*每张图片模板位置*/
+.con {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+}
+/*侧边栏轮播指示器*/
+.container .list {
+    position: absolute;
+    right: 61px;
+    top:40%;
+    z-index: 20;
+}
+/*侧边栏轮播指示器样式*/
+.container .list li {
+    width: 5px;
+    height: 5px;
+    border: 1px solid transparent;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    cursor:pointer;
+    z-index: 20;
+}
+/*当前指示器样式*/
+.container .list li.current {
+    border: 1px solid #f5f5f5;
+    background-color: #000;
+    /*        opacity: 1;*/
+    animation: point 1s 0.2s;
+}
+/*侧边栏指示器动画样式*/
+@keyframes point {
+    0% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*设置中间横幅位置大小*/
+.banner{
+    position: absolute;
+    text-align:center;
+    display:block;
+}
+/*图片*/
+.banner>img{
+    width: 100%;
+}
+/*进入探索花加样式*/
+.banner .btn{
+    display:inline-block;
+    color:#f5f5f5;
+    font-size:16px;
+    letter-spacing:8px;
+    text-align:center;
+    padding:8px 25px;
+    margin-top:58px;
+    border: 1px solid #cecece;
+}
+/*鼠标悬停时“进入探索花加”样式*/
+.banner .btn:hover{
+    color:#fff;
+    border:1px solid #f5f5f5;
+}
+/*加载时，文字向上弹跳样式*/
+.word-show{
+    animation: fadeInUp 1s .5s ease both;
+}
+/*动画效果，向上移动时透明，完成后再显示*/
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translateY(20px)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+/*第一张图片搭配文字的位置*/
+.mystyle1{
+    width: 30%;
+    min-width:300px;
+    top:40%;
+    left: 50%;
+    margin-left:-15%;
+}
+/*第二张图片搭配的文字样式*/
+.mystyle2{
+    width: 22%;
+    min-width:300px;
+    top:50%;
+    left: 54%;
+}
+/*第三张图片搭配文字样式*/
+.mystyle3{
+    width: 32%;
+    min-width:300px;
+    top:45%;
+    left: 7%;
+}
+/*第三张图片探索花加文字样式*/
+#three .banner .btn{
+    color:#000;
+    border: 1px solid #c4c4c3;
+}
+/*第三张图片探索花加文字样式*/
+#three .banner .btn:hover{
+    border-color:#333;
+}
+/*第四张图片搭配文字样式*/
+.mystyle4{
+    width: 30%;
+    min-width:300px;
+    top:50%;
+    left: 50%;
+}
+/*第五张图片搭配文字样式*/
+.mystyle5{
+    width: 30%;
+    min-width:300px;
+    top:51%;
+    left: 50%;
+    margin-left:-15%;
+}
+
+
+
+

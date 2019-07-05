@@ -1,0 +1,101 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/*设置页面的宽高*/
+.container{
+    width:100%;
+    height: 100%;
+    position:relative;
+}
+/*探索花加下划线*/
+.nav-bar>li:nth-child(2) a{
+    border-bottom:2px solid #fff;
+}
+/*顶部横幅位置*/
+.banner{
+    width:100%;
+    height:750px;
+    background:url(../images/expore_banner.jpg) no-repeat;
+    background-position:center;
+    position:absolute;
+    top:0;
+    z-index:-1;
+}
+/*1L：用鲜花点亮生活模块样式:文字+图片*/
+/*点亮生活位置*/
+.dlsh{
+    margin-top:656px;
+}
+/*文字居中*/
+.main{
+    text-align:center;
+}
+/*文字图片位置*/
+.main img:first-child{
+    margin:160px 0 50px 0;
+}
+/*中间线条样式*/
+.main .line{
+    display: block;
+    width:250px;
+    margin:0 auto;
+    border-top:1px solid #000;
+    margin-bottom:60px;
+}
+/*段落文字样式*/
+.main p{
+    font-size:14px;
+    letter-spacing:4px;
+    margin-bottom:18px;
+}
+/*1L图片距离下层位置*/
+.main p:nth-child(6){
+    margin-bottom:150px;
+}
+/*图片100%*/
+.main img:last-child{
+    width:100%;
+}
+/*轻松订阅模块样式*/
+/*2L轻松订阅下层横向排列*/
+.qsdy ul{
+    display: flex;
+    justify-content:center;
+    margin:140px 0 120px 0;
+}
+/*2L轻松订阅下层三个li距离*/
+.qsdy ul>li{
+    width:550px;
+}
+/*图片容器*/
+.qsdy ul>li>div{
+    width:110px;
+    height:110px;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+/*图片背景*/
+.qsdy ul>li:first-child>div{
+    background:url(../images/buy.jpg) no-repeat;
+    background-size:contain;
+}
+/*图片背景*/
+.qsdy ul>li:nth-child(2)>div{
+    background:url(../images/delivery.jpg) no-repeat;
+    background-size:contain;
+}
+/*图片背景*/
+.qsdy ul>li:last-child>div{
+    background:url(../images/support.jpg) no-repeat;
+    background-size:contain;
+}
+/*文字段落间的距离*/
+.qsdy ul>li>p{
+    margin-bottom:10px;
+}
+/*品质新鲜模块样式*/
+.pzxx img:last-child,
+.ysg img:last-child{
+    margin-top:120px;
+}

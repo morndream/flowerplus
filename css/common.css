@@ -1,0 +1,189 @@
+.my_footer{
+    width:100%;
+    height:700px;
+}
+/*清除内外边距*/
+*{
+    margin: 0;
+    padding:0;
+}
+ul,ol{
+    list-style: none;
+}
+/*去掉a的下划线*/
+a{text-decoration:none;}
+/*设置页面的的字体样式*/
+body{
+    font-size:12px;
+    font-family:"PingFang SC";
+}
+/*固定导航栏和二维码*/
+/*解决定位造成的坍塌*/
+.header{
+    display: flex;
+    height:93px;
+    justify-content: space-between;
+}
+.my-header{
+    position:fixed;
+    width:100%;
+    z-index: 5;
+
+}
+
+/*设置logo图片的大小和位置*/
+.logo-b,.logo-w{
+    width:178px;
+    position:absolute;
+    top:43px;
+    left:62px;
+    /*z-index:5;*/
+}
+/*黑底白字，设置字体完全显示白色*/
+.logo-black{
+    opacity:0;
+}
+/*白底黑字，设置字体完全不透明显示*/
+.logo-white{
+    opacity:1;
+}
+/*导航栏菜单横线排列*/
+.nav-bar{
+    display:flex;
+}
+/*导航栏右浮动，调整位置*/
+.menu{
+    float:right;
+    margin-top:41px;
+    margin-right:62px;
+}
+/*菜单栏的大小*/
+.nav-bar li{
+    height:50px;
+    letter-spacing: 4px;
+    line-height:50px;
+    padding:0 39px;
+    /*z-index:5;*/
+}
+
+/*鼠标悬停时的样式*/
+.nav-bar>li:nth-child(2)>a:hover,
+.nav-bar>li:nth-child(5)>a:hover,
+.nav-bar>li:last-child>a:hover
+{
+    border-bottom:2px solid #fff;
+}
+.nav-bar>li:nth-child(3)>a:hover,
+.nav-bar>li:nth-child(4)>a:hover{
+    border-bottom:1px solid #000;
+    color:#666;
+}
+/*导航栏字体的样式显示方式*/
+.nav-bar>li>a{
+    font-size:14px;
+    color:#fff;
+    display:inline-block;
+
+}
+/*鼠标悬停时header背景样式*/
+.white_bg{
+    background:#fff;
+}
+/*下拉菜单的位置*/
+.down_menu{
+    width: 100%;
+    /*min-width: 900px;*/
+    position: absolute;
+    top: 93px;
+    right: 0;
+    background: #fff;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    visibility:hidden;
+    letter-spacing: 3px;
+    transition: all .3s cubic-bezier(0.390, 0.315, 0.600, 0.200);
+}
+/*横向排列，靠右边*/
+.menu_style{
+    display:flex;
+    justify-content:flex-end;
+}
+/*调整内容的上下外边距*/
+.menu_style ul{
+    margin-top:90px;
+}
+/*家居适用的样式和办公适用之间的距离*/
+.menu_style ul:first-child li{
+    border-left:1px solid #666;
+}
+.menu_style ul:nth-child(2){
+    margin-left:150px;
+}
+
+/*调整li*/
+.menu_style ul li{
+    line-height:normal;
+}
+/*调整最后一个字体*/
+.menu_style ul li:last-child{
+    height:inherit;
+}
+/*标题字体样式*/
+.menu_style>ul>li{
+    font-size:14px;
+}
+/*内容的字体样式*/
+.menu_style>ul>li>a{
+    color:#666;
+}
+/*图片的宽高和位置调整*/
+.down_menu img{
+    width: 304px;
+    height: 190px;
+    margin:90px 200px;
+}
+.down_menu>ul>li>a:hover{
+    color:#000 !important;
+    border-bottom:none !important;
+}
+/*侧边栏固定二维码*/
+.aside-bar{
+    position: fixed;
+    top: 65%;
+    right: 20px;
+    z-index:5;
+}
+/*ul去除默认列表项样式*/
+.aside-bar  ul{
+    list-style:none;
+}
+/*侧边栏导航小格子的宽高*/
+.aside-bar ul li{
+    width:66px;
+    height:75px;
+    position:relative;
+}
+/*设置二维码背景图片*/
+.aside-bar ul li:first-child{
+    background:url(../images/bar_image0.png) no-repeat;
+}
+/*设置联系我们的背景图片、调整位置*/
+.aside-bar ul li:last-child{
+    background:url(../images/bar_image0.png);
+    background-position-y:-75px;
+}
+/*显示二维码图片*/
+.aside-bar  div.code{
+    width:173px;
+    height:209px;
+    position:absolute;
+    right:80px;
+    top:-70px;
+    background:url(../images/bar_image1.png) no-repeat;
+    display:none;
+}
+/*鼠标悬停时，显示二维码*/
+.aside-bar ul li:hover div.code{
+    display:block;
+}
